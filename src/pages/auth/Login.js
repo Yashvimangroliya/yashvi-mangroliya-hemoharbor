@@ -1,4 +1,5 @@
 import React from "react";
+import Form from "../../components/Shared/Form/Form";
 
 function Login() {
   return (
@@ -6,37 +7,12 @@ function Login() {
       <div className="row">
         <div className="col-md-8 form-banner">
           <img
-            src="./assets/images/banner1.jpg"
+            src="./assets/images/image-1.jpg"
             alt="background for home page"
           />
         </div>
         <div className="col-md-4 form-container">
-          <form>
-            <div className="mb-3">
-              <label htmlFor="exampleInputEmail1" className="form-label">
-                Email address
-              </label>
-              <input
-                type="email"
-                className="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-              />
-            </div>
-            <div className="mb-3">
-              <label htmlFor="exampleInputPassword1" className="form-label">
-                Password
-              </label>
-              <input
-                type="password"
-                className="form-control"
-                id="exampleInputPassword1"
-              />
-            </div>
-            <button type="submit" className="btn btn-primary">
-              Submit
-            </button>
-          </form>
+          <Form formTitle={'Login Page'} submitBtn={'Login'}/>
         </div>
       </div>
     </>
