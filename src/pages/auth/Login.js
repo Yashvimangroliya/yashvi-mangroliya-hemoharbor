@@ -1,10 +1,9 @@
-import React from "react";
 import Form from "../../components/Shared/Form/Form";
 
-function Login() {
+const Login = () => {
   return (
     <>
-      <div className="row">
+      <div className="row g-0">
         <div className="col-md-8 form-banner">
           <img
             src="./assets/images/image-1.jpg"
@@ -12,7 +11,11 @@ function Login() {
           />
         </div>
         <div className="col-md-4 form-container">
-          <Form formTitle={'Login Page'} submitBtn={'Login'}/>
+          <Form
+            formTitle={"Login Page"}
+            submitBtn={"Login"}
+            formType={"login"}
+          />
         </div>
       </div>
     </>
