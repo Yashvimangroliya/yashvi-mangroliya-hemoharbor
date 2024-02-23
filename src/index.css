@@ -17,7 +17,7 @@
   height: 100vh;
 }
 /* ======= loader ====== */
-.loader-container {
+.loader-container{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,6 +25,9 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 .loader {
+  background-color:rgba(0, 0, 0, 0.3) ;
+}
+.loader{
   width: 3rem;
   height: 3rem;
   border: 5px solid #fff;
@@ -52,3 +55,11 @@
   background-color: black !important;
   color: white !important;
 }
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
