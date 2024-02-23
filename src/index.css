@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,13 +6,49 @@
 
 /* ======== Form ======== */
 
-.form-banner img{
+.form-banner img {
   height: 100%;
   width: 100%;
 }
-.form-container{
+.form-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+/* ======= loader ====== */
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.loader {
+  width: 3rem;
+  height: 3rem;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  border-bottom-color: #ff3d00;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ======= navbar ====== */
+
+.navbar,
+.nav-link,
+.navbar-brand {
+  background-color: black !important;
+  color: white !important;
 }
