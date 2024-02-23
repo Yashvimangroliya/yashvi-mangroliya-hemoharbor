@@ -31,8 +31,8 @@ const authSlice = createSlice({
       state.loading = false;
       state.error = payload;
     });
-     //register user
-     builder.addCase(userRegister.pending, (state) => {
+    //register user
+    builder.addCase(userRegister.pending, (state) => {
       state.loading = true;
       state.error = null;
     });
@@ -44,8 +44,8 @@ const authSlice = createSlice({
       state.loading = false;
       state.error = payload;
     });
-     //current user
-     builder.addCase(getCurrentUser.pending, (state) => {
+    //current user
+    builder.addCase(getCurrentUser.pending, (state) => {
       state.loading = true;
       state.error = null;
     });
