@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import API from "../../services/API";
@@ -35,6 +36,5 @@ const ProtectedRoute = ({ children }) => {
   }
 };
 
-export default ProtectedRoute;
 
 

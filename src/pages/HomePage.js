@@ -5,7 +5,6 @@ import Layout from "../components/Shared/Layout/Layout";
 import Modal from "../components/Shared/Modal/Modal";
 import API from "../services/API";
 import moment from "moment";
-
 function HomePage() {
   const { loading, error } = useSelector((state) => state.auth);
   const [data, setData] = useState([]);
@@ -25,7 +24,8 @@ function HomePage() {
   }, []);
   return (
     <Layout>
-      {error && <span>{alert(error)}</span>}
+    <>
+    {error && <span>{alert(error)}</span>}
       {loading ? (
         <Spinner />
       ) : (
@@ -68,6 +68,10 @@ function HomePage() {
         </>
       )}
     </Layout>
+          <h1>Home Page</h1>
+        </>
+      )}
+    </>
   );
 }
 
