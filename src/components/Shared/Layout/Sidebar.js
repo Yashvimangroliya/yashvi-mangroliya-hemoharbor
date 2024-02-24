@@ -14,12 +14,11 @@ const Sidebar = () => {
     <div>
       <div className="sidebar">
         <div className="menu">
-          {userMenu.map((menu, index) => {
+          {userMenu.map((menu) => {
             const isActive = location.pathname === menu.path;
             return (
               <div
-                key={index}
-                className={`menu-item ${isActive && "active"}`}
+                className={`menu-item ${isActive && "active"}`}key={menu.name}
               >
                 <i className="menu.icon"></i>
                 <Link to={menu.path}>{menu.name}</Link>

@@ -1,37 +1,36 @@
 import React, { useState } from "react";
-import {useSelector} from "react-redux";
+import { useSelector } from "react-redux";
 import InputType from "../../../components/Shared/InputType";
 import API from "../../../services/API";
 const Modal = () => {
   const [inventoryType, setInventoryType] = useState("in");
   const [bloodGroup, setBloodGroup] = useState("");
   const [quantity, setQuantity] = useState(0);
-  const [donarEmail, setDonarEmail] = useState("");
-    const {user} = useSelector(state => state.auth);
+  const [email, setEmail] = useState("");
+  const { user } = useSelector((state) => state.auth);
 
-  const handleModalSubmit = async() =>{
+  const handleModalSubmit = async () => {
     try {
-        if(!bloodGroup  || !quantity){
-            return alert("please provide all fields")
-        }
-        const {data} = await API.post('/inventory/create-inventory',{
-            donarEmail,
-            email:user?.email,
-            organisation:user?._id,
-            inventoryType,
-            bloodGroup,
-            quantity,
-        });
-        if(data?.success){
-            alert("new record created")
-            window.location.reload()
-        }
+      if (!bloodGroup || !quantity) {
+        return alert("please provide all fields");
+      }
+      const { data } = await API.post("/inventory/create-inventory", {
+        email,
+        organisation: user?._id,
+        inventoryType,
+        bloodGroup,
+        quantity,
+      });
+      if (data?.success) {
+        alert("new record created");
+        window.location.reload();
+      }
     } catch (error) {
-        window.location.reload()
-        console.error(error.response);
+      alert(error.response.data.message);
+      console.log(error);
+    //   window.location.reload();
     }
-  }
-
+  };
 
   return (
     <>
@@ -106,8 +105,8 @@ const Modal = () => {
                 labelText={"Donar Email"}
                 labelFor={"donarEmail"}
                 InputType={"email"}
-                value={donarEmail}
-                onChange={(e) => setDonarEmail(e.target.value)}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
               <InputType
                 labelText={"Quantity  (ML)"}
@@ -125,7 +124,11 @@ const Modal = () => {
               >
                 Close
               </button>
-              <button type="button" className="btn btn-primary" onClick={handleModalSubmit}>
+              <button
+                type="button"
+                className="btn btn-primary"
+                onClick={handleModalSubmit}
+              >
                 Submit
               </button>
             </div>
