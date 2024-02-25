@@ -24,7 +24,7 @@ function HomePage() {
   }, []);
   return (
     <Layout>
-    <>
+
     {error && <span>{alert(error)}</span>}
       {loading ? (
         <Spinner />
@@ -68,11 +68,7 @@ function HomePage() {
         </>
       )}
     </Layout>
-          <h1>Home Page</h1>
-        </>
-      )}
-    </>
   );
-}
+};
 
 export default HomePage;
