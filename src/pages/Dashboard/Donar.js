@@ -9,8 +9,8 @@ const Donar = () => {
   const getDonars = async () => {
     try {
       const { data } = await API.get("/inventory/get-donars");
-        console.log(data);
-        // setData(data)
+      console.log(data);
+      // setData(data)
       if (data?.success) {
         setData(data?.donars);
       }

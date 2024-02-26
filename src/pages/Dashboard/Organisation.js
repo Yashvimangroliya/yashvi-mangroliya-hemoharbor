@@ -9,11 +9,13 @@ const Organisation = () => {
   const { user } = useSelector((state) => state.auth);
   const [data, setData] = useState([]);
   //find org records
-  
+
   const getOrg = async () => {
     try {
       if (user?.role === "donar") {
-        const { data } = await API.get("/inventory/get-organisation-for-hospital");
+        const { data } = await API.get(
+          "/inventory/get-organisation-for-hospital"
+        );
         //   console.log(data);
         if (data?.success) {
           setData(data?.organisations);

@@ -10,22 +10,22 @@
 .menu-item {
   padding-top: 1.875rem;
 }
-.menu-item a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
-.menu-item i{
-    font-size: 1.2rem;
-    margin: 0 .9375rem;
-    color: white;
+.menu-item i {
+  font-size: 1.2rem;
+  margin: 0 0.9375rem;
+  color: white;
 }
-.active{
-    background-color: #fff;
-    padding: .625rem;
-    margin-top: 1.5625rem;
+.active {
+  background-color: #fff;
+  padding: 0.625rem;
+  margin-top: 1.5625rem;
 }
 .active a,
-.active i{
-    color: #2e3200;
+.active i {
+  color: #2e3200;
 }

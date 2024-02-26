@@ -7,7 +7,7 @@ function Register() {
   const { loading, error } = useSelector((state) => state.auth);
   return (
     <>
-    {error && <span>{alert(error)}</span>}
+      {error && <span>{alert(error)}</span>}
       {loading ? (
         <Spinner />
       ) : (

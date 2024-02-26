@@ -7,13 +7,13 @@ const Analytics = () => {
   const [data, setData] = useState([]);
   const [inventoryData, setInventoryData] = useState([]);
   const colors = [
-    "#884A39",
+    "#bf7d6b",
     "#C38154",
     "#FFC26F",
     "#4F709C",
     "#4942E4",
     "#0079FF",
-    "#FF0060",
+    "#e06091",
     "#22A699",
   ];
   //GET BLOOD GROUP DATA
