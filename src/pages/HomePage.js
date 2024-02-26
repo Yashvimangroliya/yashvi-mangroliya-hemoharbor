@@ -34,12 +34,12 @@ function HomePage() {
         <>
           <div className="container">
             <h4
-              className="ms-4"
+              className="ms-4 pt-3"
               data-bs-toggle="modal"
               data-bs-target="#staticBackdrop"
               style={{ cursor: "pointer" }}
             >
-              <i className="fa-solid fa-plus text-success p-4"></i>
+              <i className="fa-solid fa-plus text-success pt-2 pl-2"></i>
               Add Inventory
             </h4>
             <table className="table">
