@@ -1,13 +1,59 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ======== Form ======== */
+
+.form-banner img {
+  height: 100%;
+  width: 100%;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* ======= loader ====== */
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.loader {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.loader {
+  width: 3rem;
+  height: 3rem;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  border-bottom-color: #ff3d00;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  background-color: #e06091;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ======= navbar ====== */
+
+.navbar,
+.nav-link,
+.navbar-brand {
+  background-color: rgb(32, 32, 32) !important;
+  color: white !important;
 }
