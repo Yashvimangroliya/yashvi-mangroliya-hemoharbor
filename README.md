@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Project Title
+HemoHarbor (Blood-Bank)
+## Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+HemoHarbor is a blood bank app designed to efficiently manage the storage, testing, and distribution of blood donations for medical facilities and patients in need.
 
-## Available Scripts
+### Problem
 
-In the project directory, you can run:
+The app is needed to address the challenges associated with blood banking, including the safe storage and timely distribution of blood to the right patients, as well as the need for accurate record-keeping and inventory management.
 
-### `npm start`
+### User Profile
+Donar, Hospital, BloodBanks and any other organisation can use this app to get blood quickly.They can see through analysis that how much blood is available.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-User-friendly interface for blood request and tracking.
+-Inventory management for blood bank staff.
+-Secure patient information storage.
 
-### `npm test`
+## Implementation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Tech Stack
 
-### `npm run build`
+Frontend: React
+Backend: Node.js
+Database: MongoDB
+Libraries: Redux for state management, Express for backend development
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### APIs
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+List any external sources of data that will be used in your app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Sitemap
 
-### `npm run eject`
+-Register
+-Donor
+-Inventory
+-Hospital
+-Organisation
+-Donation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Mockups
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Provide visuals of your app's screens. You can use tools like Figma or pictures of hand-drawn sketches.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Data
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Describe your data and the relationships between them. You can show this visually using diagrams, or write it out. 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Auth
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Does your project include any login or user profile functionality? If so, describe how authentication/authorization will be implemented.
 
-### Code Splitting
+## Roadmap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Scope your project as a sprint. Break down the tasks that will need to be completed and map out timeframes for implementation. Think about what you can reasonably complete before the due date. The more detail you provide, the easier it will be to build.
 
-### Analyzing the Bundle Size
+## Nice-to-haves
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I'll work on styling so that, it's become more user friendly.
